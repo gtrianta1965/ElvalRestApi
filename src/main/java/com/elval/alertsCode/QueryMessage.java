@@ -1,4 +1,4 @@
-package v1_0;
+package alertsCode;
 
 import java.sql.*;
 import javax.sql.*;
