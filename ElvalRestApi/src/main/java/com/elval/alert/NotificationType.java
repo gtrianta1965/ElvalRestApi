@@ -1,4 +1,4 @@
-package alert;
+package com.elval.alert;
 
 import java.util.Date;
 
@@ -6,11 +6,12 @@ public class NotificationType {
     public NotificationType() {
         super();
     }
-    
+
     private String message;
     private Date startDate;
     private Date endDate;
-	private Integer period; 
+    private Integer period;
+    private String error;
 
     public void setMessage(String message) {
         this.message = message;
@@ -35,7 +36,8 @@ public class NotificationType {
     public Date getEndDate() {
         return endDate;
     }
-	    public void setPeriod(Integer period) {
+
+    public void setPeriod(Integer period) {
         this.period = period;
     }
 
@@ -43,4 +45,11 @@ public class NotificationType {
         return period;
     }
 
+    public void setError(String error) {
+        this.error = error;
+    }
+
+    public String getError() {
+        return error;
+    }
 }

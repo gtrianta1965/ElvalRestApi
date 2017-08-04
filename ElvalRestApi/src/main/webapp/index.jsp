@@ -1,6 +1,6 @@
 <html>
 <body>
-<h2>Hello World!</h2>
+<h2>Check Active Notifications</h2>
 	<script>
 	  function checkAlert() {
 		  var nextRefresh = 60;
@@ -10,9 +10,11 @@
 			  if (xhr.status === 200) {
 				  var responseJSON = JSON.parse(xhr.responseText);
 				  console.log(responseJSON);
-				  alert('Response= ' + responseJSON.title);
+                                  if (responseJSON.message != null) {
+				     alert(responseJSON.message);
+                                  }
 				  nextRefresh = responseJSON.period;
-				  console.log("Sucess:set next refresh to: " + nextRefresh * 1000);
+				  console.log("Success:set next refresh to: " + nextRefresh * 1000);
 				  setTimeout(checkAlert, nextRefresh * 1000);
 			  }
 			  else {
