@@ -19,16 +19,25 @@ public class AlertService {
     @GET
     @Path("/active")
     @Produces(MediaType.APPLICATION_JSON)
-    public NotificationType getMsg() throws SQLException{
+    //public NotificationType getMsg(){
+	public Response getMsg(){
         
-        QueryMessage qm = new QueryMessage();
+        Response r;
+		QueryMessage qm = new QueryMessage();
         NotificationType nt = new NotificationType();
         nt = qm.queryMsgToUsers();
-        return nt;
+        //return nt;
 
-//        return Response.status(200)
-//                       .entity(output)
-//                       .build();
+        if (nt != null) {
+            r = Response.status(200)
+                        .entity(nt)
+                        .build();
+        } else {
+            r = Response.status(400)
+                        .entity(nt)
+                        .build();
+        }
+        return r;
 
     }
 }

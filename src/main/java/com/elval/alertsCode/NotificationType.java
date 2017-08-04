@@ -10,6 +10,7 @@ public class NotificationType {
     private String message;
     private Date startDate;
     private Date endDate;
+	private Integer period; 
 
     public void setMessage(String message) {
         this.message = message;
@@ -33,6 +34,13 @@ public class NotificationType {
 
     public Date getEndDate() {
         return endDate;
+    }
+	    public void setPeriod(Integer period) {
+        this.period = period;
+    }
+
+    public Integer getPeriod() {
+        return period;
     }
 
 }
