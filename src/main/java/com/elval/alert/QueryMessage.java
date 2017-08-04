@@ -1,4 +1,4 @@
-package alertsCode;
+package alert;
 
 import java.sql.*;
 import javax.sql.*;
@@ -15,19 +15,19 @@ public class QueryMessage {
         Statement stmt = null;
         ResultSet rs = null;
         try {
-            Class.forName("oracle.jdbc.driver.OracleDriver");
-            conn=DriverManager.getConnection(
-            "jdbc:oracle:thin:hr/hr@localhost:1521:xe","hr","hr");
+            //Class.forName("oracle.jdbc.driver.OracleDriver");
+            //conn=DriverManager.getConnection(
+            //"jdbc:oracle:thin:hr/hr@localhost:1521:xe","hr","hr");
 
-            //String DATASOURCE_CONTEXT = "jdbc/elvalDB";
+            String DATASOURCE_CONTEXT = "jdbc/elvalDB";
 
-            //Context initialContext = new InitialContext();
-            //DataSource datasource = (DataSource) initialContext.lookup(DATASOURCE_CONTEXT);
-            //if (datasource != null) {
-            //    conn = datasource.getConnection();
-            //} else {
-            //    throw new SQLException();
-            //}
+            Context initialContext = new InitialContext();
+            DataSource datasource = (DataSource) initialContext.lookup(DATASOURCE_CONTEXT);
+            if (datasource != null) {
+                conn = datasource.getConnection();
+            } else {
+                throw new SQLException();
+            }
             stmt = conn.createStatement();
             rs =
                 stmt.executeQuery("select * from  LV3_MESSAGE_TO_USERS where START_DATE<=sysdate and END_DATE>=sysdate");

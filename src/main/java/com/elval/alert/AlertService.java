@@ -1,4 +1,4 @@
-package alertsCode;
+package alert;
 
 
 import java.sql.SQLException;
