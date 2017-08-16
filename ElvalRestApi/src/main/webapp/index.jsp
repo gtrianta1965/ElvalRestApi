@@ -5,7 +5,7 @@
 	  function checkAlert() {
 		  var nextRefresh = 60;
 		  var xhr = new XMLHttpRequest();
-		  xhr.open('GET', 'rest/alerts/active');
+		  xhr.open('GET', 'rest/notification/active');
 		  xhr.onload = function () {
 			  if (xhr.status === 200) {
 				  var responseJSON = JSON.parse(xhr.responseText);

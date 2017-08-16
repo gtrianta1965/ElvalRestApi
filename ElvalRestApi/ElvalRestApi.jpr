@@ -196,14 +196,6 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <value n="id" v="Jersey-json-1.8.jar"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="Jersey-server-1.8.jar"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
             <value n="id" v="Activation-1.1.jar"/>
             <value n="isJDK" v="false"/>
          </hash>
@@ -240,11 +232,11 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <value n="id" v="Jersey-json-1.8.jar1"/>
+            <value n="id" v="Jersey-json-1.8.jar"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <value n="id" v="Jersey-server-1.8.jar1"/>
+            <value n="id" v="Jersey-server-1.8.jar"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
@@ -264,7 +256,7 @@
          <list n="libraryDefinitions">
             <hash>
                <list n="classPath">
-                  <url path="target/RESTAppElvalMsg/WEB-INF/lib/"/>
+                  <url path="target/ElvalRESTApi/WEB-INF/lib/"/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Lib"/>
@@ -273,25 +265,7 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="target/RESTAppElvalMsg/WEB-INF/lib/jersey-json-1.8.jar" jar-entry=""/>
-               </list>
-               <value n="deployedByDefault" v="true"/>
-               <value n="description" v="Jersey-json-1.8.jar"/>
-               <value n="id" v="Jersey-json-1.8.jar"/>
-               <value n="locked" v="true"/>
-            </hash>
-            <hash>
-               <list n="classPath">
-                  <url path="target/RESTAppElvalMsg/WEB-INF/lib/jersey-server-1.8.jar" jar-entry=""/>
-               </list>
-               <value n="deployedByDefault" v="true"/>
-               <value n="description" v="Jersey-server-1.8.jar"/>
-               <value n="id" v="Jersey-server-1.8.jar"/>
-               <value n="locked" v="true"/>
-            </hash>
-            <hash>
-               <list n="classPath">
-                  <url path="target/RESTAppElvalMsg/WEB-INF/lib/activation-1.1.jar" jar-entry=""/>
+                  <url path="target/ElvalRESTApi/WEB-INF/lib/activation-1.1.jar" jar-entry=""/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Activation-1.1.jar"/>
@@ -300,7 +274,7 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="target/RESTAppElvalMsg/WEB-INF/lib/asm-3.1.jar" jar-entry=""/>
+                  <url path="target/ElvalRESTApi/WEB-INF/lib/asm-3.1.jar" jar-entry=""/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Asm-3.1.jar"/>
@@ -309,7 +283,7 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="target/RESTAppElvalMsg/WEB-INF/lib/jackson-core-asl-1.7.1.jar" jar-entry=""/>
+                  <url path="target/ElvalRESTApi/WEB-INF/lib/jackson-core-asl-1.7.1.jar" jar-entry=""/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Jackson-core-asl-1.7.1.jar"/>
@@ -318,7 +292,7 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="target/RESTAppElvalMsg/WEB-INF/lib/jackson-jaxrs-1.7.1.jar" jar-entry=""/>
+                  <url path="target/ElvalRESTApi/WEB-INF/lib/jackson-jaxrs-1.7.1.jar" jar-entry=""/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Jackson-jaxrs-1.7.1.jar"/>
@@ -327,7 +301,7 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="target/RESTAppElvalMsg/WEB-INF/lib/jackson-mapper-asl-1.7.1.jar" jar-entry=""/>
+                  <url path="target/ElvalRESTApi/WEB-INF/lib/jackson-mapper-asl-1.7.1.jar" jar-entry=""/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Jackson-mapper-asl-1.7.1.jar"/>
@@ -336,7 +310,7 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="target/RESTAppElvalMsg/WEB-INF/lib/jackson-xc-1.7.1.jar" jar-entry=""/>
+                  <url path="target/ElvalRESTApi/WEB-INF/lib/jackson-xc-1.7.1.jar" jar-entry=""/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Jackson-xc-1.7.1.jar"/>
@@ -345,7 +319,7 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="target/RESTAppElvalMsg/WEB-INF/lib/jaxb-api-2.2.2.jar" jar-entry=""/>
+                  <url path="target/ElvalRESTApi/WEB-INF/lib/jaxb-api-2.2.2.jar" jar-entry=""/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Jaxb-api-2.2.2.jar"/>
@@ -354,7 +328,7 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="target/RESTAppElvalMsg/WEB-INF/lib/jaxb-impl-2.2.3-1.jar" jar-entry=""/>
+                  <url path="target/ElvalRESTApi/WEB-INF/lib/jaxb-impl-2.2.3-1.jar" jar-entry=""/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Jaxb-impl-2.2.3-1.jar"/>
@@ -363,7 +337,7 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="target/RESTAppElvalMsg/WEB-INF/lib/jersey-core-1.8.jar" jar-entry=""/>
+                  <url path="target/ElvalRESTApi/WEB-INF/lib/jersey-core-1.8.jar" jar-entry=""/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Jersey-core-1.8.jar"/>
@@ -372,25 +346,25 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="target/RESTAppElvalMsg/WEB-INF/lib/jersey-json-1.8.jar" jar-entry=""/>
+                  <url path="target/ElvalRESTApi/WEB-INF/lib/jersey-json-1.8.jar" jar-entry=""/>
                </list>
                <value n="deployedByDefault" v="true"/>
-               <value n="description" v="Jersey-json-1.8.jar1"/>
-               <value n="id" v="Jersey-json-1.8.jar1"/>
+               <value n="description" v="Jersey-json-1.8.jar"/>
+               <value n="id" v="Jersey-json-1.8.jar"/>
                <value n="locked" v="true"/>
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="target/RESTAppElvalMsg/WEB-INF/lib/jersey-server-1.8.jar" jar-entry=""/>
+                  <url path="target/ElvalRESTApi/WEB-INF/lib/jersey-server-1.8.jar" jar-entry=""/>
                </list>
                <value n="deployedByDefault" v="true"/>
-               <value n="description" v="Jersey-server-1.8.jar1"/>
-               <value n="id" v="Jersey-server-1.8.jar1"/>
+               <value n="description" v="Jersey-server-1.8.jar"/>
+               <value n="id" v="Jersey-server-1.8.jar"/>
                <value n="locked" v="true"/>
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="target/RESTAppElvalMsg/WEB-INF/lib/jettison-1.1.jar" jar-entry=""/>
+                  <url path="target/ElvalRESTApi/WEB-INF/lib/jettison-1.1.jar" jar-entry=""/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Jettison-1.1.jar"/>
@@ -399,7 +373,7 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="target/RESTAppElvalMsg/WEB-INF/lib/stax-api-1.0-2.jar" jar-entry=""/>
+                  <url path="target/ElvalRESTApi/WEB-INF/lib/stax-api-1.0-2.jar" jar-entry=""/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Stax-api-1.0-2.jar"/>
@@ -408,7 +382,7 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="target/RESTAppElvalMsg/WEB-INF/lib/stax-api-1.0.1.jar" jar-entry=""/>
+                  <url path="target/ElvalRESTApi/WEB-INF/lib/stax-api-1.0.1.jar" jar-entry=""/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Stax-api-1.0.1.jar"/>
@@ -420,14 +394,6 @@
       <list n="libraryReferences">
          <hash>
             <value n="id" v="Lib"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="Jersey-json-1.8.jar"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="Jersey-server-1.8.jar"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
@@ -467,11 +433,11 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <value n="id" v="Jersey-json-1.8.jar1"/>
+            <value n="id" v="Jersey-json-1.8.jar"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <value n="id" v="Jersey-server-1.8.jar1"/>
+            <value n="id" v="Jersey-server-1.8.jar"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>

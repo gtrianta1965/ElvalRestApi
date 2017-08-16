@@ -2,8 +2,8 @@ package com.elval.alert;
 
 import java.util.Date;
 
-public class NotificationType {
-    public NotificationType() {
+public class NotificationMessage {
+    public NotificationMessage() {
         super();
     }
 

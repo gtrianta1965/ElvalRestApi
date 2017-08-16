@@ -8,18 +8,18 @@ import javax.sql.*;
 
 import javax.naming.*;
 
-public class QueryMessage {
+public class QueryNotifications {
     static final String DATASOURCE_CONTEXT = "jdbc/elvalDB";
     static final String ACTIVE_NOTIFICATIONS_SQL = "select * from  LV3_MESSAGE_TO_USERS where START_DATE<=sysdate and END_DATE>=sysdate";
 
-    private static final Logger LOGGER = Logger.getLogger( QueryMessage.class.getName() );
+    private static final Logger LOGGER = Logger.getLogger( QueryNotifications.class.getName() );
     
-    public QueryMessage() {
+    public QueryNotifications() {
         super();
     }
 
-    public NotificationType queryActiveNotifications() {
-        NotificationType nt = new NotificationType();
+    public NotificationMessage queryActiveNotifications() {
+        NotificationMessage nt = new NotificationMessage();
         Connection conn = null;
         Statement stmt = null;
         ResultSet rs = null;
